@@ -1,0 +1,46 @@
+# 💧 Arduino Water Level Monitoring System
+
+## 📌 Description
+This project is a **Water Tank Monitoring System** using Arduino, a water level sensor, LEDs, a buzzer, and an LCD.  
+It measures water level and provides **real-time feedback** through:
+
+- **LCD Display** (Empty, Low, Medium, Full)  
+- **LED indicators** (Red, Yellow, Green)  
+- **Buzzer Alerts** (empty & full warning)  
+- **Serial Monitor logging**
+
+---
+
+## 🔧 Components
+- Arduino Uno (or compatible)  
+- Water level sensor module  
+- 16x2 I2C LCD  
+- Buzzer  
+- 3 LEDs (Red, Yellow, Green) + resistors  
+- Breadboard + jumper wires  
+
+---
+
+## 📊 Features
+- Monitors water level with analog sensor.  
+- Alerts user when tank is **empty** or **full**.  
+- Provides **visual indication** with LEDs.  
+- LCD shows real-time water status.  
+- Can prevent **overflow** and **pump dry-run damage**.  
+
+---
+
+## ⚡ How to Use
+1. Connect sensor to **A0**.  
+2. LEDs to pins **10, 11, 12**.  
+3. Buzzer to pin **9**.  
+4. Upload code and open Serial Monitor at **9600 baud**.  
+5. Place sensor in water and observe readings.  
+
+---
+
+## 🧑‍💻 Learnings
+- Using **analog sensors** with Arduino.  
+- Mapping values to thresholds (`LOW`, `MEDIUM`, `HIGH`).  
+- Interfacing **LCD I2C displays**.  
+- Implementing **alert systems** with buzzer + LEDs.
