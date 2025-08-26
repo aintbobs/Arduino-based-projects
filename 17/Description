@@ -1,0 +1,47 @@
+# 🌧️ Arduino Rain Detection & Alert System
+
+## 📌 Project Description
+This project is a **Rain Detection & Alert System** using Arduino.  
+It uses a **rain sensor** to detect rainfall and alerts the user with a **buzzer** and **LED indicators**.
+
+✅ Green LED = No rain (safe)  
+🚨 Red LED + Buzzer = Rain detected (warning)  
+
+---
+
+## 🔧 Components Used
+- Arduino Uno (or compatible)  
+- Rain sensor module  
+- Active buzzer  
+- 2 LEDs (Red & Green) + resistors  
+- Breadboard + jumper wires  
+
+---
+
+## ⚡ Features
+- Detects rainfall using a rain sensor.  
+- Alerts with **sound (buzzer)** and **LED indicators**.  
+- Prints real-time rain status on the **Serial Monitor**.  
+
+---
+
+## ▶️ How to Run
+1. Connect the components as follows:  
+   - Rain sensor → A0  
+   - Buzzer → A2  
+   - Red LED → D7  
+   - Green LED → D8  
+
+2. Upload the Arduino code.  
+3. Open the Serial Monitor at **9600 baud**.  
+4. Test by placing drops of water on the rain sensor.  
+
+---
+
+## 🧑‍💻 What I Learned
+- How to use a **rain sensor module** with Arduino.  
+- Using **digital state change detection** (`prev_state` vs `current_state`).  
+- Controlling multiple outputs (buzzer + LEDs) based on sensor input.  
+- Designing a simple **alert system** for **weather monitoring / smart home automation**.  
+
+---
