@@ -1,0 +1,59 @@
+# Arduino Smart Climate Monitor (DHT11 + LCD + Servo + Buzzer)
+
+## 📌 Project Description
+This project is a **Smart Climate Monitoring System** using Arduino.  
+It measures **temperature and humidity** using a DHT11 sensor, shows the values on an **I2C LCD**, and reacts using **LED indicators**, a **buzzer alarm**, and a **servo motor**.
+
+✅ Green LED = Safe humidity  
+⚠️ Yellow LED = Warning (moderate humidity)  
+🚨 Red LED + buzzer + servo = Danger (high humidity)  
+
+This setup simulates a **safety system** that could be used in **greenhouses, server rooms, or storage areas** where humidity must be controlled.
+
+---
+
+## 🔧 Components Used
+- Arduino Uno (or compatible)  
+- DHT11 Temperature & Humidity Sensor  
+- 16x2 LCD with I2C module  
+- Green, Yellow, Red LEDs + resistors  
+- Active Buzzer  
+- SG90 Servo motor  
+- Breadboard + Jumper wires  
+
+---
+
+## ⚡ Features
+- Real-time temperature & humidity display on LCD.  
+- Multi-level humidity monitoring with LEDs:  
+  - `< 28%` → Green (Safe)  
+  - `29–60%` → Yellow blinking (Warning)  
+  - `≥ 61%` → Red blinking + buzzer + servo moves (Danger)  
+- Servo motor simulates automatic response (e.g., opening vents).  
+- Buzzer provides audible alarm in danger zone.  
+
+---
+
+## ▶️ How to Run
+1. Wire the components:  
+   - DHT11 → D2  
+   - Green LED → D3  
+   - Yellow LED → D4  
+   - Red LED → D5  
+   - Buzzer → D6  
+   - Servo → D7  
+   - LCD (I2C) → SDA (A4), SCL (A5)  
+
+2. Upload the Arduino code.  
+3. Open Serial Monitor (optional) to verify readings.  
+4. Observe the LCD, LEDs, buzzer, and servo reacting to humidity levels.  
+
+---
+
+## 🧑‍💻 What I Learned
+- Interfacing **DHT11 sensor** for climate monitoring.  
+- Using **I2C LCD** for efficient display.  
+- Implementing **multi-level conditional responses** with LEDs, buzzer, and servo.  
+- Designing a simple **safety/automation system** with Arduino.  
+
+---
