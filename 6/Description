@@ -1,0 +1,54 @@
+# Joystick and LCD Projects
+
+## 📌 Project Description
+This repository contains two Arduino mini-projects using a **16x2 I2C LCD**:  
+
+1. **Joystick Direction Display**  
+   - Reads joystick X, Y, and button values.  
+   - Displays the direction (`Left`, `Right`, `Forward`, `Backward`) on the LCD.  
+   - Shows `"Pressed Button"` when the joystick button is clicked.  
+
+2. **Scrolling Text on LCD**  
+   - Displays a long text string.  
+   - Continuously scrolls it left and right across the LCD.  
+
+These projects demonstrate the basics of interfacing **analog inputs and LCD output** for embedded systems.  
+
+---
+
+## 🔧 Components Used
+- Arduino Uno (or compatible board)  
+- 16x2 I2C LCD (address `0x27`)  
+- Joystick Module (X, Y, Switch pins)  
+- Jumper wires + Breadboard  
+
+---
+
+## ⚡ Features
+### Joystick + LCD
+- Detects direction of movement.  
+- Displays `"Pressed Button"` when joystick button is pressed.  
+
+### Scrolling Text
+- Animates a long text message across the LCD.  
+- Demonstrates LCD `scrollDisplayLeft()` and `scrollDisplayRight()`.  
+
+---
+
+## ▶️ How to Run
+1. Upload the desired sketch to Arduino.  
+   - **`joystick_lcd.ino`** for joystick direction display.  
+   - **`lcd_scroll.ino`** for scrolling text.  
+2. Connect LCD via I2C (SDA → A4, SCL → A5).  
+3. For joystick project, connect:  
+   - `X → A0`, `Y → A1`, `SW → Pin 2`.  
+
+---
+
+## 🧑‍💻 What I Learned
+- How to read analog joystick values and map them to directions.  
+- How to interface an I2C LCD and control cursor/display text.  
+- How to scroll text programmatically using LCD functions.  
+- Basics of combining **input devices (joystick)** with **output displays (LCD)**.  
+
+---
