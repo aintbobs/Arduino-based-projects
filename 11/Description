@@ -1,0 +1,48 @@
+# 🎤 Arduino Sound Detection Alarm System  
+
+## 📌 Project Description  
+This project is a **Sound Detection Alarm System** using Arduino.  
+It detects **loud noises** with a sound sensor and triggers a **buzzer alarm** until the user resets it with a button.  
+
+✅ Buzzer stays **OFF** if no loud sound is detected  
+🚨 Buzzer turns **ON** if loud sound is detected (above threshold)  
+🔘 Alarm can be reset using the **reset button**  
+
+---
+
+## 🔧 Components Used  
+- Arduino Uno (or compatible)  
+- Sound sensor module (microphone-based)  
+- Active buzzer  
+- Push button (reset)  
+- Breadboard + jumper wires  
+
+---
+
+## ⚡ Features  
+- Detects loud sounds (e.g., claps, knocks, voice, noise).  
+- Activates **buzzer alarm** when noise exceeds a set threshold.  
+- Requires **manual reset button** to stop the alarm.  
+- Can be used for **intruder alerts, clap detection, and sound-triggered automation**.  
+
+---
+
+## ▶️ How to Run  
+1. Connect the components as follows:  
+   - Sound Sensor → **A0**  
+   - Buzzer → **D9**  
+   - Reset Button → **D2** (with internal pull-up enabled)  
+
+2. Upload the Arduino code.  
+3. Make a **loud sound** (clap, knock, or shout) near the sensor.  
+4. The **buzzer alarm will turn ON**.  
+5. Press the **reset button** to silence the alarm.  
+
+---
+
+## 🧑‍💻 What I Learned  
+- How to use a **sound sensor module** with Arduino.  
+- Setting **threshold values** for sensor input.  
+- Controlling alarms with **digital outputs** (buzzer).  
+- Implementing a **manual reset system** with buttons.  
+- Designing simple **intruder alert and automation systems**.  
