@@ -1,0 +1,59 @@
+# RFID Door Lock System with LCD and Servo
+
+## 📌 Project Description
+This project is an **RFID-based door lock system** using Arduino, an RC522 RFID module, a servo motor, and an LCD.  
+When an authorized RFID card is scanned, the servo rotates to unlock or lock the door. The LCD provides feedback messages such as **"Door is open"**, **"Door is locked"**, or **"Wrong card!"**.  
+
+This project demonstrates a simple access control mechanism that can be applied to home security, offices, or lockers.  
+
+---
+
+## 🔧 Components Used
+- Arduino Uno (or compatible board)  
+- MFRC522 RFID Reader Module  
+- RFID Cards/Tags  
+- Servo Motor (for lock mechanism)  
+- 16x2 I2C LCD Display (address `0x27`)  
+- Breadboard + Jumper Wires  
+
+---
+
+## ⚡ Circuit Connections
+- **RFID Module**:  
+  - SDA → Pin 10  
+  - SCK → Pin 13  
+  - MOSI → Pin 11  
+  - MISO → Pin 12  
+  - RST → Pin 9  
+  - 3.3V and GND  
+
+- **Servo Motor**:  
+  - Signal → Pin 6  
+  - VCC → 5V  
+  - GND → GND  
+
+- **LCD (I2C)**:  
+  - SDA → A4  
+  - SCL → A5  
+  - VCC → 5V  
+  - GND → GND  
+
+---
+
+## ▶️ How to Run
+1. Replace `"YOUR_AUTHORIZED_CARD_UID"` in the code with the UID of your RFID card (get it from Serial Monitor).  
+2. Connect the circuit as shown above.  
+3. Upload the code to Arduino.  
+4. Scan your RFID card:  
+   - If authorized: the servo unlocks/locks the door.  
+   - If unauthorized: LCD displays **"Wrong card!"**  
+
+---
+
+## 🧑‍💻 What I Learned
+- How to use the **MFRC522 RFID library** to read card UIDs.  
+- How to integrate an RFID module, LCD, and servo motor with Arduino.  
+- How to implement simple access control using card authentication.  
+- Basics of security system prototyping with microcontrollers.  
+
+---
