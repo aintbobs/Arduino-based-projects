@@ -1,0 +1,39 @@
+# Arduino LCD Custom Character Generator
+
+## 📌 Project Description
+This project demonstrates how to create and display **custom characters** on a 16x2 I2C LCD using Arduino.  
+Instead of just showing standard ASCII text, the LCD is programmed to display pixel-based icons and shapes (e.g., arrows, symbols, faces).  
+
+This is useful for projects that require **visual feedback** beyond regular text, such as indicators, progress bars, or icons.  
+
+---
+
+## 🔧 Components Used
+- Arduino Uno (or compatible board)  
+- 16x2 I2C LCD Display (address `0x27`)  
+- Jumper wires  
+- Breadboard  
+
+---
+
+## ⚡ Features
+- Define multiple custom characters (up to 8 at once).  
+- Write them to specific LCD positions.  
+- Demonstrates cursor, clear, blink, and backlight functions of the LCD library.  
+
+---
+
+## ▶️ How to Run
+1. Connect the I2C LCD to Arduino (SDA → A4, SCL → A5 on Arduino Uno).  
+2. Upload the code to your Arduino board.  
+3. The LCD will first show a few custom icons, then clear, then display "Custom Character" with multiple symbols.  
+4. Cursor and blink functions will toggle as a demo.  
+
+---
+
+## 🧑‍💻 What I Learned
+- How to use `lcd.createChar()` to store custom characters in the LCD’s CGRAM.  
+- How to control cursor, clear, and blink functions.  
+- How to go beyond plain text and add **visual creativity** to LCD projects.  
+
+---
