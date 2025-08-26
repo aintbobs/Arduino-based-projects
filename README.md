@@ -6,7 +6,7 @@ Each folder contains the **project description**, **components**, and **source c
 ---
 
 ## 📂 List of Projects
-- [Arduino Joystick with LCD](./Arduino_Joystick_with_LCD)
+- [Arduino Joystick with LCD](./arduino_joystick_lcd%20Project)
 - [Custom Character Generator (LCD)](./Custom_Character_Generator)
 - [Interfacing Arduino with DHT Temperature & Humidity Sensor](./Arduino_DHT_Sensor)
 - [Keypad with LCD, Relay, and LED](./Keypad_LCD_Relay_LED)
