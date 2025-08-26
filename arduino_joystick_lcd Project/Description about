@@ -1,0 +1,43 @@
+# Arduino Joystick with LCD
+
+## 📌 Project Description
+This project demonstrates how to interface an **analog joystick** with an **I2C LCD** using Arduino.  
+The LCD displays the joystick direction (Left, Right, Forward, Backward), and it also detects when the joystick button is pressed.  
+
+This is a simple project that teaches the basics of reading analog input values and displaying real-time feedback on an LCD screen.  
+
+---
+
+## 🔧 Components Used
+- Arduino Uno (or compatible board)  
+- Joystick module (with X, Y axis + push button)  
+- I2C 16x2 LCD display (address `0x27`)  
+- Jumper wires  
+- Breadboard  
+
+---
+
+## ⚡ Circuit Connections
+- Joystick X → A0  
+- Joystick Y → A1  
+- Joystick SW (button) → D2  
+- LCD → I2C (SDA to A4, SCL to A5 on Arduino Uno)  
+- VCC → 5V, GND → GND  
+
+---
+
+## ▶️ How to Run
+1. Connect the circuit as described above.  
+2. Upload the `joystick_lcd.ino` code to your Arduino board.  
+3. Move the joystick in different directions → LCD will display `Left`, `Right`, `Forward`, `Backward`.  
+4. Press the joystick button → LCD will show `Pressed Button`.  
+
+---
+
+## 🧑‍💻 What I Learned
+- How to read analog signals from a joystick (X and Y axis).  
+- How to interface an I2C LCD with Arduino.  
+- How to handle digital input with internal pull-up resistors.  
+- How to display dynamic messages on an LCD.  
+
+---
