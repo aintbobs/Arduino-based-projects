@@ -6,15 +6,15 @@ Each folder contains the project description, components, and code.
 ## 📂 List of Projects
 - Arduino Joystick with LCD  
 - Custom Character Generator (LCD)  
-- Interfacing Arduino with DHT Temperature & Humidity Sensor (3)   
-- Keypad with LCD, Relay, and LED (5)
-- LCD Joystick (6)   
-- Rain Sensor with LCD and Servo (8) 
-- RFID Door Lock and Open System (9) 
-- Sound Sensor with Button and Buzzer (11) 
-- Ultrasonic Sensor with LED and Buzzer (14)   
-- Water Level Sensor (16) 
-- Water Sensor with Buzzer and LED (17) 
+- Interfacing Arduino with DHT Temperature & Humidity Sensor    
+- Keypad with LCD, Relay, and LED 
+- LCD Joystick    
+- Rain Sensor with LCD and Servo  
+- RFID Door Lock and Open System  
+- Sound Sensor with Button and Buzzer 
+- Ultrasonic Sensor with LED and Buzzer    
+- Water Level Sensor 
+- Water Sensor with Buzzer and LED 
 
 ## 🔧 Tech Stack
 - Arduino Uno  
